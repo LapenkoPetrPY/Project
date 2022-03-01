@@ -1,5 +1,5 @@
 body{
-    
+
     margin: 0;
     padding: 0;
     font-weight: bolder;
@@ -10,21 +10,13 @@ body{
     font-family: Osward;
     margin: 0 auto;
 }
-}
-.header{
-    padding-top: 0px;
+
+
     
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    margin-left: 2px;
+
+
+
+
 } 
 .cart{
     width: 25px;
@@ -37,28 +29,59 @@ body{
 }
 
 .buttons {
-    font-size: 20px;
+    font-size: 15px;
     color:rgb(0, 1, 8);
     display: inline-block;
     display: flex;
     position: relative;
     text-decoration: none;
+    
 }
 
-.buttons:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #00baff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+
+.buttons:hover{
+    color: #ce23ce;
+    font-weight: bolder;
 }
 
-.buttons:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+
+    
+}
+.pade__sidebar__background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4f5f6;
+    
+}
+.page__sidebar__wrap{
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 72px 32px 64px 56px;
+    z-index: 1
+}
+.content{
+    padding-bottom: 16px;
+    
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.page__sidebar{
+    display: block;
+    width: 240px;
+    min-width: 240px;
+    border-right: 5px solid black;
+    position: relative;
+}
+nav{
+    flex-direction: column;
+    display: flex;
+    width: 90px;
+    
 }
