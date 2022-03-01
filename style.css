@@ -4,12 +4,7 @@ body{
     padding: 0;
     font-weight: bolder;
 }
-.container{
-    background: url(../img/fon.jpg);
-    width: 1500px;
-    font-family: Osward;
-    margin: 0 auto;
-}
+
 
 
     
@@ -17,16 +12,8 @@ body{
 
 
 
-} 
-.cart{
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-    margin-right: 5px;
-    text-decoration: none;
-    display: flex;
-    color:black; 
-}
+
+
 
 .buttons {
     font-size: 15px;
@@ -46,7 +33,7 @@ body{
 
 
     
-}
+
 .pade__sidebar__background{
     position: absolute;
     top: 0;
@@ -58,7 +45,6 @@ body{
 }
 .page__sidebar__wrap{
     position: relative;
-    display: -webkit-box;
     display: flex;
     height: 100%;
     -ms-flex-direction: column;
@@ -68,14 +54,15 @@ body{
 }
 .content{
     padding-bottom: 16px;
-    
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 .page__sidebar{
     display: block;
     width: 240px;
+    height: 100%;
     min-width: 240px;
+    
     border-right: 5px solid black;
     position: relative;
 }
@@ -84,4 +71,13 @@ nav{
     display: flex;
     width: 90px;
     
+}
+
+.page__wrapper{
+    height: 100vh;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px
 }
