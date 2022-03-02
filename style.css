@@ -1,64 +1,76 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    
+    font-family: serif;
     margin: 0;
+}
+main{
+    display: flex;
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+.header__nav__list{
+    list-style-type: none;
     padding: 0;
-    font-weight: bolder;
-}
-.container{
-    background: url(../img/fon.jpg);
-    width: 1500px;
-    font-family: Osward;
-    margin: 0 auto;
-}
+    margin: 0;
+    
 }
 .header{
-    padding-top: 0px;
-    
-}
-.nav{
+    border-right: 2px solid black;
+    padding: 60px 60px 0px 60px;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+    
 }
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    margin-left: 2px;
-} 
-.cart{
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-    margin-right: 5px;
+.header__list-item:not(:last-child){
+    margin-bottom: 10px;
+}
+.header__list__item-link{
+    transition: color .2s ease-in-out, transform .2s ease-in-out;
+    display: block;
+    color: black;
     text-decoration: none;
-    display: flex;
-    color:black; 
-}
-
-.buttons {
     font-size: 20px;
+}
+.header__list__item-link:hover{
+    color: #a221f2;
+    transform: scale(1.1);
+    
+}
+.buttons {
+    transition: color .2s ease-in-out, transform .2s ease-in-out;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size:16px;
+    margin-bottom: 1px;
+}
+.firstinfo{
+    margin-top: 150px;
+    margin-bottom: 1px;
+    font-size: 16px;
     color:rgb(0, 1, 8);
     display: inline-block;
     display: flex;
     position: relative;
     text-decoration: none;
 }
-
-.buttons:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #00baff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+.daysinfo{
+    margin-top: 1px;
+    font-size: 16px;
+    color:rgb(0, 1, 8);
+    display: inline-block;
+    display: flex;
+    position: relative;
+    text-decoration: none;
 }
-
-.buttons:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.buttons:hover{
+    color: #a221f2;
+    transform: scale(1.1);
 }
