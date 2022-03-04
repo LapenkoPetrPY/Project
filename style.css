@@ -5,15 +5,9 @@ body{
     font-family: serif;
     margin: 0;
 }
-
-
 main{
     display: flex;
 }
-
-
-
-
 .logo{
     height: 80px;
     width: 80px;
@@ -27,12 +21,16 @@ main{
 }
 .header{
     border-right: 2px solid black;
-    padding: 60px 60px 0px 60px;
+    padding: 50px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 100vh;
+    height: 100vh;  
+    position: fixed;
     
+}
+.header__top{
+    width: 81px;
 }
 .header__list-item:not(:last-child){
     margin-bottom: 10px;
@@ -48,6 +46,62 @@ main{
     color: #a221f2;
     transform: scale(1.1);
     
+}
+.bottom__info-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.header__bottom{
+    margin-top: 100px;
+    padding-bottom: 150px;
+    width: 150px;
+}
+.bottom__info-list__items:not(:last-child){
+    margin-bottom: 5px;
+    
+}
+.bottom__info-contacts{
+    text-decoration: none;
+    color: black;
+    font-weight: bold; 
+}
+.bottom__info-contacts:hover{
+    color: #a221f2;
+}
+
+.language{
+    margin-bottom: 20px;
+}
+
+.lang__select{
+    background-color: white;
+    border: none;
+    outline: .1px solid #5f5d5d;;
+    position: relative;
+    padding: 0px;
+}
+
+
+.lang__select:hover{
+    background-color: #5f5d5d;
+    border: none;
+    transition: .2s;
+    
+}
+
+.lang__button{  
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+         
+}
+
+.lang__button:hover{  
+    text-decoration: none;
+    color: white;
+    transition: .3s;
 }
 
 
