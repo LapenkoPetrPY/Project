@@ -23,11 +23,7 @@ main{
     position: fixed;
 }
 
-
-
-
-
-/*top section*/
+/*header top section*/
 
 .header__top{
     width: 81px;
@@ -74,63 +70,31 @@ main{
     width: 150px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*languages*/
 .language{
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-.lang__button{  
+.lang__button {
     text-decoration: none;
     color: black;
-    transition: .3s;
-    display: inline-block;
-    background-color: white;
-    border: none;
-    border: 1px solid black;
-    position: relative;
-    padding: 0px;
-    cursor: pointer;
-    user-select: none;
-         
+    padding: 2px;
+    transition: all .3s ease-in-out;
 }
 
-
-.lang__button:hover{  
-    text-decoration: none;
-    color: white;
-    transition: .3s;
-    background-color: #5f5d5d;
-    border: none;
-    transition: .2s;
-}
-.active{
+.lang__button:hover {
     background-color: gray;
     color: white;
 }
 
+.active {
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
 
-
-
-
-
-
-/*bottom section*/
+/*header bottom section*/
 
 
 .bottom__info-list{
